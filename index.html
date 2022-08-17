@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=q" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/868307dfcd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #nav::after {
+        transition: all 1s;
+        width: var(--width, 0%);
+      }
+    </style>
+    <title>Portofolio</title>
+  </head>
+
+  <body style="font-family: 'Inter', sans-serif">
+    <main
+      id="main"
+      class="flex flex-col items-center bg-gradient-to-tr from-[#0a4196] to-[#00d4ff]"
+    >
+      <div
+        class="w-4/5 h-fit bg-slate-200/[0.1] my-16 rounded-2xl shadow-xl drop-shadow pt-16 pb-20"
+      >
+        <h1
+          class="text-5xl font-bold text-center border-b-2 border-black/[0.4] pb-10"
+        >
+          WebDev Experience
+        </h1>
+
+        <div class="h-64 flex items-center justify-center gap-16">
+          <a href="https://www.instagram.com/rava_maulana14/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-5x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/rava-maulana/" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-5x"></i
+          ></a>
+          <a href="https://github.com/RMA1403" target="_blank"
+            ><i class="fa-brands fa-github fa-5x"></i
+          ></a>
+        </div>
+
+        <div class="py-10 bg-[#0a4196] sticky top-0 border-y-4 border-black">
+          <div
+            id="nav"
+            class="w-4/5 h-10 bg-slate-300 mx-auto rounded-full flex relative overflow-hidden after:h-10 after:absolute after:bg-[#2ad57c]"
+          >
+            <a
+              href="#website-pertama"
+              class="w-1/4 px-3 text-sm text-center flex items-center justify-center border-r-2 border-black z-10"
+            >
+              Website Pertama
+            </a>
+            <a
+              href="#backend-development"
+              class="w-1/4 px-3 text-sm text-center flex items-center justify-center border-r-2 border-black z-10"
+            >
+              Backend Development
+            </a>
+            <a
+              href="#project-saat-ini"
+              class="w-1/4 px-3 text-sm text-center flex items-center justify-center border-r-2 border-black z-10"
+            >
+              Project Saat Ini
+            </a>
+            <a
+              href="#k12-project"
+              class="w-1/4 px-3 text-sm text-center flex items-center justify-center z-10"
+            >
+              K-12 Project
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div
+            id="website-pertama"
+            class="flex px-8 gap-12 items-center justify-between pt-48"
+          >
+            <p class="w-1/2 text-justify text-base">
+              Website pertama yang saya buat merupakan sebuah website film yang
+              dapat menampilkan data-data dari sebuah film. Website ini saya
+              buat pada saat masa perkuliahan semester 1 sebagai tugas dari
+              suatu organisasi. Sebelum ini, pengalaman web development saya
+              hanya terbatas pada HTML dan CSS yang pertama kali saya pelajari
+              pada kelas 11 SMA. Karena saya ingin menambahkan interaktivitas
+              pada website ini, akhirnya saya mempelajari JavaScript selama
+              kurang lebih 2 minggu dan berhasil membuat fitur carousel untuk
+              menampilkan list film serta berhasil menyambungkan website pada
+              api yang berisi database film.<br />
+              <a
+                href="https://github.com/RMA1403/myMovie_project"
+                class="text-slate-200 underline"
+                target="_blank"
+                >(github repo)</a
+              >
+            </p>
+            <video class="w-1/2 rounded-2xl" controls autoplay loop>
+              <source src="website-pertama.mp4" />
+            </video>
+          </div>
+
+          <div
+            id="backend-development"
+            class="flex flex-row-reverse px-8 gap-12 items-center justify-between pt-48"
+          >
+            <p class="w-1/2 text-justify text-base">
+              Setelah membuat website pertama, saya mulai mempelajari backend
+              development menggunakan NodeJS. Selain itu, saya juga mempelajari
+              framework backend dan database seperti Express, MongoDB, dan
+              MySQL. Salah satu project backend yang pernah saya buat adalah
+              membuat server backend untuk tugas Milestone SPARTA. Kelompok saya
+              memilih untuk membuat web-app yang dapat menyimpan data makanan
+              dan dapat menunjukkan makanan yang sudah mendekati expiry date.
+              Dalam project ini, diimplementasikan proses CRUD untuk data user
+              dan data makanan ke dalam database MongoDB menggunakan Mongoose
+              dan Express.<br />
+              <a
+                href="https://github.com/RMA1403/Server-Milestone"
+                class="text-slate-200 underline"
+                target="_blank"
+                >(github repo)</a
+              >
+            </p>
+            <video class="w-1/2 rounded-2xl" controls autoplay loop>
+              <source src="backend-development.mp4" />
+            </video>
+          </div>
+
+          <div
+            id="project-saat-ini"
+            class="flex px-8 gap-12 items-center justify-between pt-48"
+          >
+            <p class="w-1/2 text-justify text-base">
+              Untuk frontend development, sekarang ini saya sedang mendalami
+              framework React dan Svelte. Salah satu project yang sedang saya
+              kerjakan bersama teman-teman saya adalah website homepage untuk
+              AIChE ITB. Dalam project ini, saya mengerjakan bagian frontend
+              menggunakan framework Svelte dan Tailwind CSS. Website ini sendiri
+              memiliki fitur yang cukup lengkap seperti halaman landing-page,
+              contact-us, about-us, dan lain-lain. Dalam project ini saya
+              belajar untuk berkolaborasi dan bekerja bersama sebagai sebuah
+              tim, mulai dari proses perancangan website, desain, hingga proses
+              developmentnya.
+            </p>
+            <video class="w-1/2 rounded-2xl" controls autoplay loop>
+              <source src="project-saat-ini.mp4" />
+            </video>
+          </div>
+
+          <div
+            id="k12-project"
+            class="flex flex-row-reverse px-8 gap-12 items-center justify-between pt-48"
+          >
+            <p class="w-1/2 text-justify text-base">
+              Kedepannya saya akan mengejarkan project website untuk event K-12
+              AIChE. Dalam event ini, saya berperan sebagai ketua divisi IT
+              dengan jobdesc membuat rancangan awal website, mengontrol tim
+              beranggotakan 5 orang, dan memastikan keberlangsungan project.
+              Saat ini, website masih dalam tahap perencanaan awal dan
+              fitur-fitur yang akan diimplementasikan antara lain proses
+              registrasi user untuk acara dan perlombaan, proses pembayaran
+              otomatis untuk pendaftaran, dan platform untuk perlombaan yang
+              akan diselenggarakan.
+            </p>
+            <img src="k12-project.png" alt="" class="w-1/2 rounded-2xl" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
